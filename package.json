@@ -1,0 +1,57 @@
+{
+	"name": "tbsc.ui-kit",
+	"version": "1.0.0",
+	"description": "UI Kit",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack-cli --config webpack.config.ts --mode=development",
+		"build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack-cli --config webpack.config.ts --mode=production",
+		"watch": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack-cli --config webpack.config.ts --mode=development --watch",
+		"lint": "eslint ./src --ext .ts,.tsx",
+		"lintfix": "eslint ./src --ext .ts,.tsx --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@gitlab.com/_TBSC/ui-kit.git"
+	},
+	"author": "Vasilii Zolotukhin <mail@indapublic.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://gitlab.com/_TBSC/ui-kit/issues"
+	},
+	"homepage": "https://gitlab.com/_TBSC/ui-kit#readme",
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@babel/preset-env": "^7.15.0",
+		"@babel/preset-react": "^7.14.5",
+		"@babel/preset-typescript": "^7.15.0",
+		"@types/node": "^16.6.2",
+		"@types/react": "^17.0.19",
+		"@types/react-dom": "^17.0.9",
+		"@types/webpack": "^5.28.0",
+		"@types/webpack-dev-server": "^3.11.5",
+		"@typescript-eslint/eslint-plugin": "^4.29.2",
+		"babel-loader": "^8.2.2",
+		"babel-plugin-react-css-modules": "^5.2.6",
+		"cross-env": "^7.0.3",
+		"css-loader": "^6.2.0",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"postcss-scss": "^4.0.0",
+		"prettier": "^2.3.2",
+		"sass": "^1.38.0",
+		"sass-loader": "^12.1.0",
+		"style-loader": "^3.2.1",
+		"ts-node": "^10.2.1",
+		"tsconfig-paths": "^3.10.1",
+		"webpack": "^5.51.1",
+		"webpack-cli": "^4.8.0",
+		"webpack-dev-server": "^4.0.0"
+	}
+}
